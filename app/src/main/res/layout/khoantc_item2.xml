@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/khoantc_item"
+    app:cardCornerRadius="20dp"
+    android:elevation="5dp"
+    app:cardBackgroundColor="@android:color/darker_gray"
+    android:padding="8dp">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorAccent2"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:id="@+id/tvTieuDe"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Tieu de chi tieu"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#FA0505"
+            android:background="#88FD00"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="8dp"/>
+<!--        <EditText-->
+<!--            android:id="@+id/tvMaTC"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="48dp"-->
+<!--            android:layout_below="@+id/tvTieuDe"-->
+<!--            android:layout_alignParentLeft="true"-->
+<!--            android:hint="..."-->
+<!--            android:gravity="left|center_vertical"-->
+<!--            android:layout_margin="8dp"/>-->
+        <EditText
+            android:id="@+id/tvtenkhoantc"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/tvTieuDe"
+            android:layout_alignParentLeft="true"
+            android:hint="Ten"
+            android:gravity="left|center_vertical"
+            android:layout_margin="8dp"/>
+
+        <EditText
+            android:id="@+id/tvNgay"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/tvtenkhoantc"
+            android:layout_alignParentLeft="true"
+            android:hint="Ngay chi tieu"
+            android:gravity="left|center_vertical"
+            android:layout_margin="8dp"/>
+
+
+        <EditText
+        android:id="@+id/tvTien"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/tvNgay"
+        android:layout_alignParentLeft="true"
+        android:hint="Tien"
+        android:gravity="left|center_vertical"
+        android:layout_margin="8dp"/>
+
+        <EditText
+            android:id="@+id/tvGhiChu"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/tvTien"
+            android:layout_alignParentLeft="true"
+            android:hint="GhiChu"
+            android:gravity="left|center_vertical"
+            android:layout_margin="8dp"/>
+
+        <Spinner
+            android:id="@+id/spn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvGhiChu" />
+
+<!--        <EditText-->
+<!--            android:id="@+id/tvMaLoai"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="48dp"-->
+<!--            android:layout_below="@+id/tvGhiChu"-->
+<!--            android:layout_alignParentLeft="true"-->
+<!--            android:hint="..."-->
+<!--            android:gravity="left|center_vertical"-->
+<!--            android:layout_margin="8dp"/>-->
+
+
+        <TextView
+            android:id="@+id/ktcSeparate"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/spn"
+            android:background="@android:color/black"
+            android:layout_margin="8dp"/>
+
+
+<!--        <Button-->
+<!--            android:id="@+id/btnThem"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Them"-->
+<!--            android:layout_below="@+id/ktcSeparate"/>-->
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
